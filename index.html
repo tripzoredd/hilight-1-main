@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20221027005952" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20221027005952">
+</head>
+
+<body class="main">
+    <div class="body__wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__content">
+                    <a class="logo" href="index.html">LOGO</a>
+                    <nav class="menu">
+                        <label class="menu__burger" for="burger-menu">
+                            <input type="checkbox" id="burger-menu" />
+                            <span></span>
+                            <span></span>
+                        </label>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="about.html">About us</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="contact.html">Contacts</a>
+                            </li>
+                        </ul>
+                        <div class="menu__buttons">
+                            <div class="menu__buttons-lang">En</div>
+                            <button class="button">Send Request</button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="dropdown">
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="about.html">About us</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="contact.html">Contacts</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <button class="button">Send Request</button>
+                    </li>
+                </ul>
+            </div>
+            <p class="burger-menu">Menu</p>
+        </header>
+        <div class="modal">
+            <div class="modal__close"></div>
+            <div class="modal__wrapper">
+                <div class="modal__request">
+                    <div class="modal__content">
+                        <h2 class="modal__title">Make request</h2>
+                        <div class="modal__content-inputs">
+                            <div class="input-group">
+                                <input class="input" type="text" placeholder=" " />
+                                <label class="placeholder">Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="input" type="text" placeholder=" " />
+                                <label class="placeholder">Last name</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="input" type="tel" placeholder=" " />
+                                <label class="placeholder">Phone</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="input" type="text" placeholder=" " />
+                                <label class="placeholder">Your city</label>
+                            </div>
+                            <div class="input-group">
+                                <input class="input" type="email" placeholder=" " />
+                                <label class="placeholder">Email</label>
+                            </div>
+                            <div class="input-group">
+                                <select class="input" name="">
+                                    <option value="0">Property type</option>
+                                    <option value="1">Property type 1</option>
+                                    <option value="2">Property type 2</option>
+                                </select>
+                            </div>
+                            <div class="input-group comment">
+                                <input class="input" type="text" placeholder=" " />
+                                <label class="placeholder">Your comment</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__content modal__content-bot">
+                        <h6>Area (m2)</h6>
+                        <div class="modal__content-groups">
+                            <div class="modal__content-group">
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-0" value="0" />
+                                    <label for="radio-0">to 50</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-1" value="50" />
+                                    <label for="radio-1">50-150</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-2" value="150" />
+                                    <label for="radio-2">150-250</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-3" value="250" />
+                                    <label for="radio-3">250-400</label>
+                                </div>
+                            </div>
+                            <div class="modal__content-group">
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-4" value="400" />
+                                    <label for="radio-4">400-600</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-5" value="600" />
+                                    <label for="radio-5">600-800</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-6" value="800" />
+                                    <label for="radio-6">800-1000</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" name="areaList" id="radio-7" value="1000" />
+                                    <label for="radio-7">1000+</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal__content-buttons">
+                            <div class="modal__content-input">
+                                <label class="label" for="image-input">
+                                    <span>
+                                        Attach your file
+                                        <p>File size not more than 10 MB</p>
+                                    </span>
+                                </label>
+                                <input type="file" id="image-input">
+                            </div>
+                            <button class="button modal__content-button">Send Request</button>
+                        </div>
+                        <p class="modal__content-text">It is a long established fact that a reader will be distracted by
+                            the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                            that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                            here, content here', making it look like readable English.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__response">
+                <div class="modal__content">
+                    <h2 class="modal__title">Thank you for your message!</h2>
+                    <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper
+                        eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare
+                        pretium velit.</p>
+                    <button class="button modal__content-button">Send again</button>
+                </div>
+            </div>
+        </div>
+        <main class="wrapper">
+            <div class="main__swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/main-swiper-1.webp" type="image/webp"><img
+                                src="images/main-swiper-1.jpg" alt="">
+                        </picture>
+                        <div class="swiper-slide__content">
+                            <p class="swiper-slide__next">Next project</p>
+                            <h1 class="swiper-slide__title">Thoughtful making of space</h1>
+                            <p class="swiper-slide__prev">Previous project</p>
+                            <a class="main__link" href="one-project.html">Discover more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/main-swiper-2.webp" type="image/webp"><img
+                                src="images/main-swiper-2.jpg" alt="">
+                        </picture>
+                        <div class="swiper-slide__content">
+                            <p class="swiper-slide__next">Next project</p>
+                            <h1 class="swiper-slide__title">Perfect proportions</h1>
+                            <p class="swiper-slide__prev">Previous project</p>
+                            <a class="main__link" href="one-project.html">Discover more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/main-swiper-3.webp" type="image/webp"><img
+                                src="images/main-swiper-3.jpg" alt="">
+                        </picture>
+                        <div class="swiper-slide__content">
+                            <p class="swiper-slide__next">Next project</p>
+                            <h1 class="swiper-slide__title">Residence by the lighthouse</h1>
+                            <p class="swiper-slide__prev">Previous project</p>
+                            <a class="main__link" href="one-project.html">Discover more</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/main-swiper-4.webp" type="image/webp"><img
+                                src="images/main-swiper-4.jpg" alt="">
+                        </picture>
+                        <div class="swiper-slide__content">
+                            <p class="swiper-slide__next">Next project</p>
+                            <h1 class="swiper-slide__title">Perfect proportions</h1>
+                            <p class="swiper-slide__prev">Previous project</p>
+                            <a class="main__link" href="one-project.html">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-navigation">
+                    <div class="swiper-navigation__button swiper-navigation__prev">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 9L1 5L5 1" stroke="white" stroke-width="0.75" />
+                        </svg>
+                        <p class="swiper-navigation__number swiper-navigation__prev-num">00</p>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-navigation__button swiper-navigation__next">
+                        <p class="swiper-navigation__number swiper-navigation__next-num">02</p>
+                        <svg class="swiper-navigation__arrow-next" width="6" height="10" viewBox="0 0 6 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 9L1 5L5 1" stroke="white" stroke-width="0.75" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__bot active">
+                    <div class="container">
+                        <div class="header__bot-links">
+                            <a class="header__bot-link">Fb</a>
+                            <a class="header__bot-link">In</a>
+                            <a class="header__bot-link">Be</a>
+                        </div>
+                        <div class="header__bot-content">
+                            <div class="location">
+                                <div class="location__field">
+                                    <img class="location__icon" src="images/location-icon.svg" alt="">
+                                    <img class="location__arrow" src="images/location-arrow.svg" alt="">
+                                </div>
+                                <div class="location__select">
+                                    <select>
+                                        <option value="0">Location</option>
+                                        <option value="1">Berlin</option>
+                                        <option value="2">Frankfurt</option>
+                                        <option value="3">Cologne</option>
+                                        <option value="4">Hamburg</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header__bot-contact">
+                                <a href="tel:+380983527547">+380983527547</a>
+                                <a href="mailto:info@gmail.com">E: info@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__philosophy">
+                <div class="main__philosophy-content">
+                    <div class="main__philosophy-top">
+                        <div class="main__philosophy-group">
+                            <h2 class="main__title">Company Philosophy</h2>
+                            <p class="main__text">The basic philosophy of our studio is to create individual,
+                                aesthetically stunning solutions for our customers by lightning-fast development of
+                                projects employing unique styles and architecture. Even if you don't have a ready sketch
+                                of what you want - we will help you get the result.</p>
+                            <p class="main__text">We can also help you create harmony out of seemingly completely
+                                incompatible elements in the interior or the exterior design. Do you want to combine
+                                classics and abstract art? Modern and retro? Love everything associated with the 1940's?
+                                No problem! </p>
+                            <a class="main__link" href="about.html">Discover more</a>
+                        </div>
+                        <picture>
+                            <source srcset="images/philosophy-top.webp" type="image/webp"><img
+                                src="images/philosophy-top.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="container">
+                        <div class="main__philosophy-bot">
+                            <div class="main__philosophy-images">
+                                <picture>
+                                    <source srcset="images/philosophy-bot-1.webp" type="image/webp"><img
+                                        src="images/philosophy-bot-1.jpg" class="img1">
+                                </picture>
+                                <picture>
+                                    <source srcset="images/philosophy-bot-2.webp" type="image/webp"><img
+                                        class="main__philosophy-image" src="images/philosophy-bot-2.jpg" class="img2">
+                                </picture>
+                            </div>
+                            <p class="main__philosophy-cite">
+                                We can also help you create harmony out of seemingly completely incompatible elements in
+                                the interior or the exterior design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__projects">
+                <div class="container">
+                    <div class="main__projects-top">
+                        <h2 class="main__title">Our Projects</h2>
+                        <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim
+                            sed, ornare pretium velit.</p>
+                    </div>
+                    <div class="main__projects-content">
+                        <a class="main__project" href="one-project.html">
+                            <picture>
+                                <source srcset="images/project-1.webp" type="image/webp"><img src="images/project-1.jpg"
+                                    alt="">
+                            </picture>
+                            <div class="main__project-cover"></div>
+                            <div class="main__project-content">
+                                <div class="main__project-top">
+                                    <p>Lodz</p>
+                                    <p>16.10.2018</p>
+                                    <p>80 sq.m</p>
+                                </div>
+                                <div class="main__project-bot">
+                                    <h3 class="main__project-name">Residence by the lighthouse</h3>
+                                    <p class="main__link">Discover more</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="main__project" href="one-project.html">
+                            <picture>
+                                <source srcset="images/project-2.webp" type="image/webp"><img src="images/project-2.jpg"
+                                    alt="">
+                            </picture>
+                            <div class="main__project-cover"></div>
+                            <div class="main__project-content">
+                                <div class="main__project-top">
+                                    <p>Lodz</p>
+                                    <p>16.10.2018</p>
+                                    <p>80 sq.m</p>
+                                </div>
+                                <div class="main__project-bot">
+                                    <h3 class="main__project-name">Minimalist style home</h3>
+                                    <p class="main__link">Discover more</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="main__project" href="one-project.html">
+                            <picture>
+                                <source srcset="images/project-3.webp" type="image/webp"><img src="images/project-3.jpg"
+                                    alt="">
+                            </picture>
+                            <div class="main__project-cover"></div>
+                            <div class="main__project-content">
+                                <div class="main__project-top">
+                                    <p>Lodz</p>
+                                    <p>16.10.2018</p>
+                                    <p>80 sq.m</p>
+                                </div>
+                                <div class="main__project-bot">
+                                    <h3 class="main__project-name">Eyewear storeinterior</h3>
+                                    <p class="main__link">Discover more</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="main__project" href="one-project.html">
+                            <picture>
+                                <source srcset="images/project-4.webp" type="image/webp"><img src="images/project-4.jpg"
+                                    alt="">
+                            </picture>
+                            <div class="main__project-cover"></div>
+                            <div class="main__project-content">
+                                <div class="main__project-top">
+                                    <p>Lodz</p>
+                                    <p>16.10.2018</p>
+                                    <p>80 sq.m</p>
+                                </div>
+                                <div class="main__project-bot">
+                                    <h3 class="main__project-name">House on a Hillside</h3>
+                                    <p class="main__link">Discover more</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="main__project main__project--last" href="projects.html">
+                            <h3 class="main__project-name">See more 60 projects</h3>
+                            <picture>
+                                <source srcset="images/project-4.webp" type="image/webp"><img src="images/project-4.jpg"
+                                    alt="">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="main__projects-bot">
+                        <h2 class="main__title title2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <div class="main__projects-gallery">
+                            <picture>
+                                <source srcset="images/gallery-1.webp" type="image/webp"><img class="gallery__img-1"
+                                    src="images/gallery-1.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-2.webp" type="image/webp"><img class="gallery__img-2"
+                                    src="images/gallery-2.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-3.webp" type="image/webp"><img class="gallery__img-3"
+                                    src="images/gallery-3.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-4.webp" type="image/webp"><img class="gallery__img-4"
+                                    src="images/gallery-4.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-5.webp" type="image/webp"><img class="gallery__img-5"
+                                    src="images/gallery-5.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-1.webp" type="image/webp"><img class="gallery__img-6"
+                                    src="images/gallery-1.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-2.webp" type="image/webp"><img class="gallery__img-7"
+                                    src="images/gallery-2.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-3.webp" type="image/webp"><img class="gallery__img-8"
+                                    src="images/gallery-3.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-4.webp" type="image/webp"><img class="gallery__img-9"
+                                    src="images/gallery-4.jpg" alt="">
+                            </picture>
+                            <picture>
+                                <source srcset="images/gallery-5.webp" type="image/webp"><img class="gallery__img-10"
+                                    src="images/gallery-5.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="main__projects-request">
+                            <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu
+                                enim sed, ornare pretium velit.</p>
+                            <button class="button">Make request</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <picture>
+                    <source srcset="images/section-1.webp" type="image/webp"><img class="section__img-1"
+                        src="images/section-1.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-2.webp" type="image/webp"><img class="section__img-2"
+                        src="images/section-2.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-3.webp" type="image/webp"><img class="section__img-3"
+                        src="images/section-3.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-4.webp" type="image/webp"><img class="section__img-4"
+                        src="images/section-4.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-5.webp" type="image/webp"><img class="section__img-5"
+                        src="images/section-5.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-6.webp" type="image/webp"><img class="section__img-6"
+                        src="images/section-6.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-7.webp" type="image/webp"><img class="section__img-7"
+                        src="images/section-7.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="images/section-8.webp" type="image/webp"><img class="section__img-8"
+                        src="images/section-8.jpg" alt="">
+                </picture>
+                <div class="container">
+                    <h1>@lorem.ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+                        posuere.</p>
+                </div>
+            </section>
+
+            <div class="contacts">
+                <div class="container">
+                    <div class="block-name">
+                        <p class="block-name__content">Contacts</p>
+                    </div>
+                    <div class="contacts__content">
+                        <h2 class="title">Drop us a line</h2>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu
+                            mauris vitae posuere.</p>
+                        <div class="contacts__info">
+                            <div class="contacts__info-city">
+                                <h3>Kyiv</h3>
+                                <a href="tel:+(209) 555-0104">(209) 555-0104</a>
+                                <p>6391 Elgin St. Celina, Delaware 10299</p>
+                            </div>
+                            <div class="contacts__info-city">
+                                <h3>Lviv</h3>
+                                <a href="tel:+(209) 555-0104">(209) 555-0104</a>
+                                <p>6391 Elgin St. Celina, Delaware 10299</p>
+                            </div>
+                            <div class="contacts__info-city">
+                                <h3>Kharkiv</h3>
+                                <a href="tel:+(209) 555-0104">(209) 555-0104</a>
+                                <p>6391 Elgin St. Celina, Delaware 10299</p>
+                            </div>
+                        </div>
+                        <div class="contacts__bot">
+                            <button class="button">Make request</button>
+                            <div class="contacts__bot-content">
+                                <a href="mailto:info@gmail.com">info@gmail.com</a>
+                                <div class="contacts__bot-links">
+                                    <a class="contacts__bot-link">Fb</a>
+                                    <a class="contacts__bot-link">In</a>
+                                    <a class="contacts__bot-link">Be</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__content-text">© Copyright 2018. All rights reserved</p>
+                    <div class="footer__content-group">
+                        <p class="footer__content-text">Made with love in</p>
+                        <picture>
+                            <source srcset="images/footer-img.webp" type="image/webp"><img src="images/footer-img.png"
+                                alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20221027005952"></script>
+    <script src="js/app.min.js?_v=20221027005952"></script>
+</body>
+
+</html>
